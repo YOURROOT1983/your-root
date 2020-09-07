@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Welcome",
+    "description": "Nützliche und wissenswerte Informationen rund um das Thema",
+    "key": "Welcome",
+    "url": "/welcome/",
+    "tags": [ "Sicherheit", "Service" ],
+    "components": []
+  }
+]

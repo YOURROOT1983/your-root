@@ -1,0 +1,35 @@
+<!doctype html>
+<html brand="tui" lang="de">
+  <head>
+    <title>{{ pageData.title }} – {{ seo.title }}</title>
+    <meta charset="utf-8">
+    <meta httpequiv="x-ua-compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ seo.description }}">
+    <meta name="keywords" content="{{ pageData.tags }}">
+
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="og:url" content="{{ seo.url }}">
+
+    <link rel="stylesheet" href="{% page_prefix %}/base.css">
+
+  </head>
+  <body>
+
+    {% block header %}
+      {% include "components/header.njk" %}
+    {% endblock %}
+
+    {{ content | safe }}
+    
+    {% block footer %}
+      <footer>
+
+      </footer>
+    {% endblock %}
+
+  </body>
+</html>
