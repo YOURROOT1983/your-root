@@ -18,18 +18,12 @@
 
   </head>
   <body>
-
-    {% block header %}
-      {% include "components/header.njk" %}
-    {% endblock %}
-
-    {{ content | safe }}
-    
-    {% block footer %}
-      <footer>
-
-      </footer>
-    {% endblock %}
-
+    {% include "components/header.njk" %}
+    <main class="container">
+      {{ content | safe }}
+    </main>
+    <footer class="container">
+      &copy; YourRoots 2020
+    </footer>
   </body>
 </html>
