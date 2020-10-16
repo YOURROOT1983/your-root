@@ -3,7 +3,7 @@ layout: templates/base.njk
 title: Willkommen
 ---
 
-# Willkommen
+# Willkommen bei YOUR ROOT
 ![YOUR ROOT Logo](/_assets/images/YR-Logo-neg.svg)
 
 ## Produkte
