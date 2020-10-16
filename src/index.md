@@ -4,7 +4,9 @@ title: Willkommen
 color: tiefschwarz
 ---
 
-# Willkommen
+
+# Willkommen bei YOUR ROOT
+
 ![YOUR ROOT Logo](/_assets/images/YR-Logo-neg.svg)
 
 ---
