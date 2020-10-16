@@ -4,6 +4,7 @@ title: Willkommen
 ---
 
 # Willkommen
+![YOUR ROOT Logo](/_assets/images/YR-Logo-neg.svg)
 
 ## Produkte
 <ul>
