@@ -1,5 +1,5 @@
 <!doctype html>
-<html brand="tui" lang="de">
+<html brand="tui" lang="de" class="bg--{{ color }}">
   <head>
     <title>YOUR ROOT – {{ title }}</title>
     <meta charset="utf-8">
@@ -8,14 +8,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ seo.description }}">
-    <meta name="keywords" content="{{ pageData.tags }}">
+    <meta name="keywords" content="{{ tags }}">
 
     <meta property="og:title" content="{{ seo.title }}">
     <meta property="og:description" content="{{ seo.description }}">
     <meta property="og:url" content="{{ seo.url }}">
 
     <link rel="stylesheet" href="/base.css">
-
   </head>
   <body>
     <header aria-label="meta">
@@ -25,8 +24,8 @@
         </strong>
       </section>
     </header>
-    <main class="container">
-      <article class="row">
+    <main>
+      <article class="container">
         {{ content | safe }}
       </article>
     </main>

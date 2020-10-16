@@ -31,6 +31,15 @@
   font-style: normal;
 }
 
+$schwarz: rgb(0,0,0);
+$tiefschwarz: rgb(14,14,16); // Tiefschwarz
+$weisz: rgb(241,236,225); // Reinweiß
+$zuckermais-chili: rgb(249,154,28); // Zuckermais-Chili
+$kuerbis-zitronengras: rgb(237,107,33); // Kürbis-Zitronengras
+$paprika-tomate: rgb(255,42,27); // Paprika-Tomate
+$rotebete-basilikum: rgb(107,28,35); // Rote-Bete-Basilikum
+$suesskartoffel-ingwer: rgb(71,36,60); // Süßkartoffel-Ingwer
+
 // Basic
 *:focus {
   box-shadow: 0 4px 8px 0;
@@ -46,11 +55,11 @@ html {
   font-size: 100%;
   height: 100%;
   width: 100%;
-  background-color: #000;
-  color: #FFF;
+  background-color: $schwarz;
+  color: $weisz;
 }
 a {
-  color: #FFF;
+  color: $weisz;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -60,6 +69,9 @@ body {
   padding: 0;
   margin: 0;
 }
+header {
+  padding: 1rem;
+}
 h1 {
   font-weight: 900;
 }
@@ -67,13 +79,73 @@ h1, h2, h3, strong {
   text-transform: uppercase;
   font-family: "Dystopian";
 }
+main {
+  padding: 1rem;
+  background-color: $schwarz;
+}
+footer {
+  padding: 1rem;
+}
+hr {
+  border: none;
+  height: .5rem;
+  border-radius: .25rem;
+}
+nav {
+  list-style: none;
+  a {
+    display: block;
+    margin: 1rem;
+    i {
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      margin-right: .5rem;
+      border-radius: 50rem;
+    }
+  }
+}
+.bg {
+  &--tiefschwarz {
+    background-color: $tiefschwarz;
+    hr {
+      background-color: $tiefschwarz;
+    }
+  }
+  &--zuckermais-chili {
+    background-color: $zuckermais-chili;
+    hr {
+      background-color: $zuckermais-chili;
+    }
+  }
+  &--kuerbis-zitronengras {
+    background-color: $kuerbis-zitronengras;
+    hr {
+      background-color: $kuerbis-zitronengras;
+    }
+  }
+  &--paprika-tomate {
+    background-color: $paprika-tomate;
+    hr {
+      background-color: $paprika-tomate;
+    }
+  }
+  &--rotebete-basilikum {
+    background-color: $rotebete-basilikum;
+    hr {
+      background-color: $rotebete-basilikum;
+    }
+  }
+  &--suesskartoffel-ingwer {
+    background-color: $suesskartoffel-ingwer;
+    hr {
+      background-color: $suesskartoffel-ingwer;
+    }
+  }
+}
 
 // Layout
 .container {
   margin: auto;
   max-width: 1200px;
-}
-.row {
-  position: relative;
-  padding: 20px;
 }
