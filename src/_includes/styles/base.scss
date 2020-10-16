@@ -2,7 +2,36 @@
 * base.scss
 */
 
-// Basics
+@font-face {
+  font-family: "Dystopian";
+  src: url("/_assets/fonts/Dystopian-Light.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dystopian";
+  src: url("/_assets/fonts/Dystopian-Regular.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dystopian";
+  src: url("/_assets/fonts/Dystopian-Bold.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dystopian";
+  src: url("/_assets/fonts/Dystopian-Black.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Basic
 *:focus {
   box-shadow: 0 4px 8px 0;
   outline: 2px solid currentColor;
@@ -13,15 +42,38 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 100%;
   height: 100%;
   width: 100%;
+  background-color: #000;
+  color: #FFF;
+}
+a {
+  color: #FFF;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 body {
   padding: 0;
   margin: 0;
 }
+h1 {
+  font-weight: 900;
+}
+h1, h2, h3, strong {
+  text-transform: uppercase;
+  font-family: "Dystopian";
+}
+
+// Layout
 .container {
   margin: auto;
   max-width: 1200px;
+}
+.row {
+  position: relative;
+  padding: 20px;
 }

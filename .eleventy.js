@@ -3,8 +3,7 @@ const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSass, { watch: ["src/_includes/styles/base.scss"] })
-  eleventyConfig.addPassthroughCopy({"src/_includes/scripts": "/"});
-  eleventyConfig.addShortcode("page_prefix", () => process.env.PAGE_PREFIX || "");
+  eleventyConfig.addPassthroughCopy({"src/_assets/fonts": "/_assets/fonts"});
 
   return {
     dir: {

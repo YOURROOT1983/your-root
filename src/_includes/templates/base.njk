@@ -1,7 +1,7 @@
 <!doctype html>
 <html brand="tui" lang="de">
   <head>
-    <title>{{ pageData.title }} – {{ seo.title }}</title>
+    <title>YOUR ROOT – {{ title }}</title>
     <meta charset="utf-8">
     <meta httpequiv="x-ua-compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,16 +14,27 @@
     <meta property="og:description" content="{{ seo.description }}">
     <meta property="og:url" content="{{ seo.url }}">
 
-    <link rel="stylesheet" href="{% page_prefix %}/base.css">
+    <link rel="stylesheet" href="/base.css">
 
   </head>
   <body>
-    {% include "components/header.njk" %}
+    <header aria-label="meta">
+      <section class="container">
+        <strong class="row">
+          <a href="/">YOUR ROOT</a>
+        </strong>
+      </section>
+    </header>
     <main class="container">
-      {{ content | safe }}
+      <article class="row">
+        {{ content | safe }}
+      </article>
     </main>
     <footer class="container">
-      &copy; YourRoots 2020
+      <article class="row">
+        &copy; YOUR ROOT FOOD 2020
+        <a href="/impressum">Impressum</a>
+      </article>
     </footer>
   </body>
 </html>

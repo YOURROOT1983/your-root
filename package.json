@@ -1,7 +1,7 @@
 {
-    "name": "your-roots",
+    "name": "your-root",
     "private": true,
-    "description": "Website of Your Roots products.",
+    "description": "Static website for YOUR ROOT FOOD Company and Products.",
     "version": "1.0.0",
     "license": "MIT",
     "engines": {
@@ -18,7 +18,7 @@
         "eleventy-plugin-sass": "^1.0.0",
         "node-sass": "^4.14.1"
     },
-    "author": "Your Roots",
+    "author": "YOUR ROOT FOOD",
     "contributors": [
         {
             "name": "Thomas Bielich",
@@ -27,7 +27,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/tbielich/your-roots"
+        "url": "https://github.com/tbielich/your-root"
     },
     "devDependencies": {
         "glob": "7.1.6",
