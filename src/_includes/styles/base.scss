@@ -164,16 +164,21 @@ nav {
 // components
 .heroteaser {
   background-color: $text;
+  text-transform: uppercase;
   .container {
     display: flex;
     a {
       color: $text;
+      height: 240px;
+      overflow: hidden;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+      text-align: center;
     }
-    .product {
-      figure {
-        margin: 0;
-        padding: 10rem 0;
-      }
+    figure {
+      margin: 0;
+      padding: 1rem;
     }
   }
 }
