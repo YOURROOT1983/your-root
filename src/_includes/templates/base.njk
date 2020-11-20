@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/base.css">
   </head>
   <body>
+    {% block header %}
     <header aria-label="meta">
       <section class="container">
         <strong class="row">
@@ -24,16 +25,19 @@
         </strong>
       </section>
     </header>
+    {% endblock %}
     <main>
       <article class="container">
         {{ content | safe }}
       </article>
     </main>
+    {% block footer %}
     <footer class="container">
       <article class="row">
         &copy; YOUR ROOT FOOD 2020
         <a href="/impressum">Impressum</a>
       </article>
     </footer>
+    {% endblock %}
   </body>
 </html>

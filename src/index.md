@@ -1,23 +1,12 @@
 ---
-layout: templates/base.njk
+layout: templates/base-demo.njk
 title: Willkommen
 color: tiefschwarz
 ---
 
-
-# Willkommen bei YOUR ROOT
+<div style="margin: auto; text-align:center">
 
 ![YOUR ROOT Logo](/_assets/images/YR-Logo-neg.svg)
+## Coming soon
 
----
-## Produkte
-<nav class="products">
-  {% for product in collections.sortedSauce %}
-  <a href="{{ product.url }}">
-    <i class="bg--{{ product.data.color }}"></i>
-    {{ product.data.title }}
-  </a>
-  {% endfor %}
-</nav>
-
----
+</div>
