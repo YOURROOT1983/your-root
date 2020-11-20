@@ -2,6 +2,7 @@
 layout: templates/base.njk
 title: Willkommen
 color: tiefschwarz
+permalink: "index-root.html"
 ---
 
 # YOUR ROOT
@@ -15,9 +16,15 @@ color: tiefschwarz
 * Ohne Allergene
 * Tatsächlich auch noch vegan, gluten- und lactosefrei
 
-
 ---
-## Unsere Produkte
-{% include "components/navigation.njk" %}
+
+> Deine Gesundheit ist unser Anliegen.
+
+> Unser Planet ist unsere Verantwortung.
+
+> Auf diesen Leitsätzen wächst unsere Motivation.
+
+> Mach was draus und wachs daran!
+
 
 ---

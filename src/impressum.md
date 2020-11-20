@@ -1,6 +1,7 @@
 ---
 layout: templates/base.njk
 title: Impressum
+permalink: "impressum.html"
 ---
 
 # Impressum

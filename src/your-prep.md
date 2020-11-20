@@ -1,6 +1,7 @@
 ---
 layout: templates/base.njk
-title: Mission
+title: Your Prep
+permalink: "your-prep.html"
 ---
 
 # Your-Prep
@@ -98,4 +99,3 @@ Das war es schon.
 ---
 
 ## Unsere Produkte
-{% include "components/navigation.njk" %}

@@ -1,6 +1,7 @@
 ---
 layout: templates/base.njk
 title: Mission
+permalink: "mission.html"
 ---
 
 # Unsere Mission
@@ -59,4 +60,3 @@ Zudem soll es planetenfreundlich und alltagstauglich sein.
 ---
 
 ## Unsere Produkte
-{% include "components/navigation.njk" %}

@@ -21,13 +21,13 @@
     <header aria-label="meta" class="header">
       <section class="container">
         <div class="row">
-          <a href="/index-root/" class="header__item brand">
+          <a href="/index-root.html" class="header__item brand">
             YOUR<img src="/_assets/images/YR-Logo-neg.svg" alt="YOUR ROOT LOGO">ROOT
           </a>
-          <a href="/mission/" class="header__item">
+          <a href="/mission.html" class="header__item">
             Our Mission
           </a>
-          <a href="/your-prep/" class="header__item">
+          <a href="/your-prep.html" class="header__item">
             Your Prep
           </a>
           <details class="header__item details">
@@ -47,11 +47,14 @@
       </article>
     </main>
     {% block footer %}
+    {% block products %}
+      {% include "components/navigation.njk" %}
+    {% endblock %}
     <footer class="container">
-      <article class="row">
+      <div class="row">
         &copy; YOUR ROOT FOOD 2020
-        <a href="/impressum">Impressum</a>
-      </article>
+        <a href="/impressum.html">Impressum</a>
+      </div>
     </footer>
     {% endblock %}
   </body>

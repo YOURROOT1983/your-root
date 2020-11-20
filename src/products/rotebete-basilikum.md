@@ -1,10 +1,12 @@
 ---
 tags: product
 title: Rote Bete-Basilikum
-layout: templates/base-product.njk
+layout: templates/base-products.njk
 key: rotebete-basilikum
+permalink: "rotebete-basilikum/index.html"
 order: 4
 usps:
+  - Dein Superfood
   - usp#1
   - usp#2
   - usp#3

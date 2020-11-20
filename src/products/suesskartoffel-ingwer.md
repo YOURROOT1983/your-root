@@ -1,10 +1,12 @@
 ---
 tags: product
 title: Süsskartoffel-Ingwer
-layout: templates/base-product.njk
+layout: templates/base-products.njk
 key: suesskartoffel-ingwer
+permalink: "suesskartoffel-ingwer/index.html"
 order: 5
 usps:
+  - Dein Sättigungswunder
   - usp#1
   - usp#2
   - usp#3

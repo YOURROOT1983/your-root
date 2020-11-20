@@ -1,10 +1,12 @@
 ---
 tags: product
 title: Zuckermais-Chili
-layout: templates/base-product.njk
+layout: templates/base-products.njk
 key: zuckermais-chili
+permalink: "zuckermais-chili/index.html"
 order: 1
 usps:
+  - Dein Energiespender
   - usp#1
   - usp#2
   - usp#3

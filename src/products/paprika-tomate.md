@@ -1,10 +1,12 @@
 ---
 tags: product
-title: Paprika-Tomaten
-layout: templates/base-product.njk
+title: Paprika-Tomate
+layout: templates/base-products.njk
 key: paprika-tomate
+permalink: "paprika-tomate/index.html"
 order: 3
 usps:
+  - Dein Immunboost
   - usp#1
   - usp#2
   - usp#3

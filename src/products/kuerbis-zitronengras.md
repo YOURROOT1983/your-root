@@ -1,10 +1,12 @@
 ---
 tags: product
 title: Kürbis-Zitronengras
-layout: templates/base-product.njk
+layout: templates/base-products.njk
 key: kuerbis-zitronengras
+permalink: "kuerbis-zitronengras/index.html"
 order: 2
 usps:
+  - Deine innere Kraft
   - usp#1
   - usp#2
   - usp#3

@@ -165,15 +165,23 @@ nav {
 
 // components
 .slider {
-  outline: 1px solid $text;
+  border-bottom: 2px solid $text;
   position: relative;
   figure {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   figcaption {
+    align-self: center;
     background: $background;
     display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50rem;
   }
   &__content {
     display: block;
@@ -186,11 +194,12 @@ nav {
       border-radius: 50rem;
       line-height: .5rem;
       position: absolute;
-      top: 50%;
+      bottom: 1rem;
       background: #FFF;
+      color: $text;
     }
     a[rel="next"] {
-      right: 0;
+      right: 1rem;
     }
     a[rel="prev"] {
       left: 0;
