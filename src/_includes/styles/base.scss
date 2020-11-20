@@ -167,6 +167,7 @@ nav {
 .slider {
   border-bottom: 2px solid $text;
   position: relative;
+  background-size: cover;
   figure {
     margin: 0;
     padding: 0;
@@ -208,7 +209,7 @@ nav {
   .slide {
     display: inline-block;
     width: 100%;
-    height: 240px;
+    height: 360px;
   }
 
 }
@@ -219,7 +220,7 @@ nav {
     display: flex;
     a {
       color: $text;
-      height: 240px;
+      height: 360px;
       overflow: hidden;
       flex-grow: 1;
       flex-shrink: 1;
@@ -229,6 +230,9 @@ nav {
     figure {
       margin: 0;
       padding: 1rem;
+    }
+    figcaption {
+      display: none;
     }
   }
 }

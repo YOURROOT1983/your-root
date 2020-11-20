@@ -14,6 +14,7 @@ usps:
 
 
 # {{ title }}
+
 **Deine innere Kraft** –
 Unsere Kürbis-Zitronengras-Sauce ist kalorien- und säurearm.
 Trotzdem macht sie dich durch ihren Zucker- und Ballaststoffgehalt langfristig satt.
@@ -23,6 +24,7 @@ Das in pflanzlichen Lebensmitteln enthaltene Betakarotin verbindet sich mit den 
 Zudem strotzt unser Hokkaido-Kürbis an Kalium, Magnesium, Calzium und Eisen.
 Diese Mineralstoffe helfen dir bei der Regulation deines Wasserhaushaltes, der Signalübertragung in deinen Muskeln, dem Bau deiner Knochen und Zähne und deiner Blutbildung.
 
+</div>
 ---
 **Vegan - Glutenfrei - Laktosefrei**
 ## Zutaten

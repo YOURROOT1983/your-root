@@ -1,11 +1,11 @@
 <div class="heroteaser">
   <div class="container">
     {% for product in collections.sortedSauce %}
-    <a href="{{ product.url }}" class="bg--{{ product.data.key }}">
+    <a href="{{ product.url }}" class="bg--{{ product.data.key }}" style="background-image:url('/_assets/images/{{ product.data.key }}.jpg')" title="{{ product.data.title }}">
       <figure>
         <figcaption>
           {{ product.data.title }}
-      </figcaption>
+        </figcaption>
       </figure>
     </a>
     {% endfor %}

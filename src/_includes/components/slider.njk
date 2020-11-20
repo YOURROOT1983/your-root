@@ -1,28 +1,28 @@
 {% import "macros/macros.njk" as macros %}
 
-<div class="slider">
+<div class="slider" style="background-image:url('/_assets/images/{{ key }}.jpg')">
   <div class="container">
-  <div class="slider__content" id="slider">
-    {% for usp in usps %}
+    <div class="slider__content" id="slider">
+      {% for usp in usps %}
       {{
         macros.uspSlider(
-          usp
+        usp
         )
       }}
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
     <div class="slider__controls">
       <a href="#next" rel="next" onclick="getSliderWidth()">&gt;</a>
     </div>
   </div>
 </div>
 <script type="text/javascript">
-  function getSliderWidth(){
-    var slider = document.getElementById('slider')
-    var sliderWidth = slider.offsetWidth;
-    slider.scrollBy({
-      left: sliderWidth,
-      behavior: "smooth"
-    });
-  }
+function getSliderWidth(){
+  var slider = document.getElementById('slider')
+  var sliderWidth = slider.offsetWidth;
+  slider.scrollBy({
+    left: sliderWidth,
+    behavior: "smooth"
+  });
+}
 </script>
