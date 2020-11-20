@@ -4,7 +4,12 @@ title: Kürbis-Zitronengras
 layout: templates/base-product.njk
 key: kuerbis-zitronengras
 order: 2
+usps:
+  - usp#1
+  - usp#2
+  - usp#3
 ---
+
 
 # {{ title }}
 **Deine innere Kraft** –

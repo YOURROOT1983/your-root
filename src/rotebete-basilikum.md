@@ -4,6 +4,10 @@ title: Rote Bete-Basilikum
 layout: templates/base-product.njk
 key: rotebete-basilikum
 order: 4
+usps:
+  - usp#1
+  - usp#2
+  - usp#3
 ---
 
 # {{ title }}

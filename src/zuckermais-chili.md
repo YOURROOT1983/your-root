@@ -4,6 +4,10 @@ title: Zuckermais-Chili
 layout: templates/base-product.njk
 key: zuckermais-chili
 order: 1
+usps:
+  - usp#1
+  - usp#2
+  - usp#3
 ---
 
 

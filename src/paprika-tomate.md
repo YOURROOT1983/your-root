@@ -4,6 +4,10 @@ title: Paprika-Tomaten
 layout: templates/base-product.njk
 key: paprika-tomate
 order: 3
+usps:
+  - usp#1
+  - usp#2
+  - usp#3
 ---
 
 

@@ -4,6 +4,10 @@ title: Süsskartoffel-Ingwer
 layout: templates/base-product.njk
 key: suesskartoffel-ingwer
 order: 5
+usps:
+  - usp#1
+  - usp#2
+  - usp#3
 ---
 
 # {{ title }}
