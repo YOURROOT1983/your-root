@@ -15,7 +15,7 @@ usps:
 
 # {{ title }}
 **Dein Immunboost** – 
-Diese fruchtige Sauce stärkt dich von Innen.
+Diese fruchtig leckere Sauce stärkt dich von Innen.
 Paprika / Tomate ist kalorienarm, bietet dennoch durch den hohen Anteil an Ballaststoffen eine gute Sättigung.
 Zudem wirken die Ballaststoffe der Paprika im Darm wie ein Schwamm.
 Sie nehmen viel mit, was da nicht hingehört und reinigen somit.
