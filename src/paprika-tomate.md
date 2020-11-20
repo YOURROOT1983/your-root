@@ -1,8 +1,8 @@
 ---
 tags: product
-title: Paprika-Tomaten-Sauce
-layout: templates/base.njk
-color: paprika-tomate
+title: Paprika-Tomaten
+layout: templates/base-product.njk
+key: paprika-tomate
 order: 3
 ---
 

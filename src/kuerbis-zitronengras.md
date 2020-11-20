@@ -1,11 +1,10 @@
 ---
 tags: product
-title: Kürbis-Zitronengras-Sauce
-layout: templates/base.njk
-color: kuerbis-zitronengras
+title: Kürbis-Zitronengras
+layout: templates/base-product.njk
+key: kuerbis-zitronengras
 order: 2
 ---
-
 
 # {{ title }}
 **Deine innere Kraft** –

@@ -1,8 +1,8 @@
 ---
 tags: product
-title: Zuckermais-Chili-Sauce
-layout: templates/base.njk
-color: zuckermais-chili
+title: Zuckermais-Chili
+layout: templates/base-product.njk
+key: zuckermais-chili
 order: 1
 ---
 

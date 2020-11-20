@@ -1,0 +1,13 @@
+<div class="heroteaser">
+  <div class="container">
+    {% for product in collections.sortedSauce %}
+    <a href="{{ product.url }}" class="bg--{{ product.data.key }}">
+      <figure>
+        <figcaption>
+          {{ product.data.title }}
+      </figcaption>
+      </figure>
+    </a>
+    {% endfor %}
+  </div>
+</div>

@@ -2,48 +2,24 @@
 * base.scss
 */
 
-@font-face {
-  font-family: "Dystopian";
-  src: url("/_assets/fonts/Dystopian-Light.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Light.woff") format("woff");
-  font-display: swap;
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Dystopian";
-  src: url("/_assets/fonts/Dystopian-Regular.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Regular.woff") format("woff");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Dystopian";
-  src: url("/_assets/fonts/Dystopian-Bold.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Bold.woff") format("woff");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Dystopian";
-  src: url("/_assets/fonts/Dystopian-Black.woff2") format("woff2"), url("/_assets/fonts/Dystopian-Black.woff") format("woff");
-  font-display: swap;
-  font-weight: 900;
-  font-style: normal;
-}
+@import "_fonts.scss";
 
-$schwarz: rgb(0,0,0);
-$tiefschwarz: rgb(14,14,16); // Tiefschwarz
-$weisz: rgb(241,236,225); // Reinweiß
-$zuckermais-chili: rgb(249,154,28); // Zuckermais-Chili
-$kuerbis-zitronengras: rgb(237,107,33); // Kürbis-Zitronengras
-$paprika-tomate: rgb(255,42,27); // Paprika-Tomate
-$rotebete-basilikum: rgb(107,28,35); // Rote-Bete-Basilikum
-$suesskartoffel-ingwer: rgb(71,36,60); // Süßkartoffel-Ingwer
+// Default
+$background: rgb(255,255,255);
+$background-nature: rgb(241,236,225);
+$text: rgb(0,0,0);
+// Products
+$zuckermais-chili: rgba(249, 225, 3, 1); // Zuckermais-Chili
+$kuerbis-zitronengras: rgba(242, 86, 29, 1); // Kürbis-Zitronengras
+$paprika-tomate: rgba(228, 32, 34, 1); // Paprika-Tomate
+$rotebete-basilikum: rgba(140, 3, 67, 1); // Rote-Bete-Basilikum
+$suesskartoffel-ingwer: rgba(176, 44, 141, 1); // Süßkartoffel-Ingwer
+
 
 // Basic
 *:focus {
-  box-shadow: 0 4px 8px 0;
-  outline: 2px solid currentColor;
+  box-shadow: 0;
+  outline: 2px solid $text;
   z-index: 99;
   position: relative;
 }
@@ -55,11 +31,10 @@ html {
   font-size: 100%;
   height: 100%;
   width: 100%;
-  background-color: $schwarz;
-  color: $weisz;
+  background-color: $background-nature;
+  color: $text;
 }
 a {
-  color: $weisz;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -69,9 +44,41 @@ body {
   padding: 0;
   margin: 0;
 }
-header {
+.header {
   padding: 1rem;
+  background-color: $text;
+  color: $background-nature;
+  text-transform: uppercase;
+  .row {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+  &__item {
+    padding: .5rem;
+  }
+  .brand {
+    padding: 0 1rem;
+    display: inline-flex;
+    align-items: center;
+    img {
+      height: 2em;
+      line-height: 0;
+      margin: 0 .2em;
+    }
+  }
+  a {
+    color: $background-nature;
+  }
+  details {
+    display: inline-block;
+    & > nav {
+      position: absolute;
+      background-color: $text;
+    }
+  }
 }
+
 h1 {
   font-weight: 900;
 }
@@ -81,7 +88,6 @@ h1, h2, h3, strong {
 }
 main {
   padding: 1rem;
-  background-color: $schwarz;
 }
 footer {
   padding: 1rem;
@@ -105,41 +111,69 @@ nav {
     }
   }
 }
-.bg {
-  &--tiefschwarz {
-    background-color: $tiefschwarz;
-    hr {
-      background-color: $tiefschwarz;
+.product {
+  &--background-nature {
+    i, hr, figure {
+      background-color: $background-nature;
     }
   }
   &--zuckermais-chili {
-    background-color: $zuckermais-chili;
-    hr {
+    i, hr, figure {
       background-color: $zuckermais-chili;
     }
   }
   &--kuerbis-zitronengras {
-    background-color: $kuerbis-zitronengras;
-    hr {
+    i, hr, figure {
       background-color: $kuerbis-zitronengras;
     }
   }
   &--paprika-tomate {
-    background-color: $paprika-tomate;
-    hr {
+    i, hr, figure {
       background-color: $paprika-tomate;
     }
   }
   &--rotebete-basilikum {
-    background-color: $rotebete-basilikum;
-    hr {
+    i, hr, figure {
       background-color: $rotebete-basilikum;
     }
   }
   &--suesskartoffel-ingwer {
-    background-color: $suesskartoffel-ingwer;
-    hr {
+    i, hr, figure {
       background-color: $suesskartoffel-ingwer;
+    }
+  }
+}
+.bg {
+  &--zuckermais-chili {
+    background-color: $zuckermais-chili;
+  }
+  &--kuerbis-zitronengras {
+    background-color: $kuerbis-zitronengras;
+  }
+  &--paprika-tomate {
+    background-color: $paprika-tomate;
+  }
+  &--rotebete-basilikum {
+    background-color: $rotebete-basilikum;
+  }
+  &--suesskartoffel-ingwer {
+    background-color: $suesskartoffel-ingwer;
+  }
+}
+
+// components
+.heroteaser {
+  background-color: $text;
+  .container {
+    display: flex;
+    a {
+      color: $text;
+    }
+    .product {
+      figure {
+        margin: 0;
+        padding: 10rem 0;
+      }
     }
   }
 }

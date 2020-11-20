@@ -1,0 +1,8 @@
+<nav class="products" role="products">
+  {% for product in collections.sortedSauce %}
+  <a href="{{ product.url }}" class="product--{{ product.data.key }}">
+    <i></i>
+    {{ product.data.title }}
+  </a>
+  {% endfor %}
+</nav>

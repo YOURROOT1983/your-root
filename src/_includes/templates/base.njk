@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" class="bg--{{ color }}">
+<html lang="de" class="bg--{{ key }}">
   <head>
     <title>YOUR ROOT – {{ title }}</title>
     <meta charset="utf-8">
@@ -18,13 +18,25 @@
   </head>
   <body>
     {% block header %}
-    <header aria-label="meta">
+    <header aria-label="meta" class="header">
       <section class="container">
-        <strong class="row">
-          <a href="/">YOUR ROOT</a>
-        </strong>
+        <div class="row">
+          <a href="/index-root/" class="header__item brand">
+            YOUR<img src="/_assets/images/YR-Logo-neg.svg" alt="YOUR ROOT LOGO">ROOT
+          </a>
+          <a href="/philosophie/" class="header__item">
+            Mission
+          </a>
+          <details class="header__item details">
+            <summary>Produkte</summary>
+            {% include "components/navigation.njk" %}
+          </details>
+        </div>
       </section>
     </header>
+    {% endblock %}
+    {% block heroteaser %}
+      {% include "components/heroteaser.njk" %}
     {% endblock %}
     <main>
       <article class="container">

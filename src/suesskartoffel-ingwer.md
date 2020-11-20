@@ -1,8 +1,8 @@
 ---
 tags: product
-title: Süsskartoffel-Ingwer-Sauce
-layout: templates/base.njk
-color: suesskartoffel-ingwer
+title: Süsskartoffel-Ingwer
+layout: templates/base-product.njk
+key: suesskartoffel-ingwer
 order: 5
 ---
 

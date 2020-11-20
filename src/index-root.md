@@ -4,20 +4,20 @@ title: Willkommen
 color: tiefschwarz
 ---
 
+# YOUR ROOT
 
-# Willkommen bei YOUR ROOT
+* YOURROOT ist deine Gemüsegrundlage
+* Ohne Konservierungsstoffe
+* Unfassbar vielseitig
+* Regional wo's möglich ist
+* Reiner geht's nicht
+* Ohne Zuckerzusatz
+* Ohne Allergene
+* Tatsächlich auch noch vegan, gluten- und lactosefrei
 
-![YOUR ROOT Logo](/_assets/images/YR-Logo-neg.svg)
 
 ---
-## Produkte
-<nav class="products">
-  {% for product in collections.sortedSauce %}
-  <a href="{{ product.url }}">
-    <i class="bg--{{ product.data.color }}"></i>
-    {{ product.data.title }}
-  </a>
-  {% endfor %}
-</nav>
+## Unsere Produkte
+{% include "components/navigation.njk" %}
 
 ---

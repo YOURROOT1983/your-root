@@ -1,8 +1,8 @@
 ---
 tags: product
-title: Rote Bete-Basilikum-Sauce
-layout: templates/base.njk
-color: rotebete-basilikum
+title: Rote Bete-Basilikum
+layout: templates/base-product.njk
+key: rotebete-basilikum
 order: 4
 ---
 
